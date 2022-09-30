@@ -1,0 +1,2 @@
+2022-09-30 13:47:38	error	logger/logger_test.go:23	err occuse	{"defined_key": "definde_value", "meta": {"para1": "values1", "para2": "values2"}}
+2022-09-30 13:47:38	error	logger/logger_test.go:24	登录失败	{"defined_key": "definde_value", "error": "pkg error", "meta": {"用户名": "978216492@qq.com", "密码": "123456"}}

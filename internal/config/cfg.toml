@@ -1,0 +1,46 @@
+# token相关配置
+[jwt]
+expirDuration = 24                  #token过期时间 单位：小时
+refreshDuration = 720               #刷新token过期时间
+secret = "i1ydX9RtHyuJTrw7frcu"     #token生成秘钥
+
+#mysql相关配置
+[mysql]
+[mysql.base]
+connMaxLifeTime = 60
+maxIdleConn = 60
+maxOpenConn = 10
+addr = "139.155.76.9:3306"
+name = "gee_db"
+pass = "dazhutou123??"
+user = "root"
+
+#redis相关配置
+[redis]
+addr = "139.155.76.9:6379"
+db = 0
+maxRetries = 3
+minIdleConns = 5
+pass = "000415"
+poolSize = 10
+
+[log]
+logPath = "./log/gee-code.log"
+level = "ERROR" #DEBUG INFO WARN ERROR
+stdout = true
+jsonFormat = true
+
+[server]
+serverName = "api"
+host = ":8088"
+pprof = true
+
+#邮箱配置
+[email]
+[email.QQ]
+smtpHost = "smtp.qq.com"
+smtpPort = "587"
+sender = "978216492@qq.com"
+secret = "etautdfmtfiybfci"
+
+
