@@ -2,7 +2,6 @@
 package core
 
 import (
-	response2 ""
 	"errors"
 	"fmt"
 	"github.com/gin-contrib/pprof"

@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github/xujialingit/shopping-app/internal/api"
 	"github/xujialingit/shopping-app/internal/config"
 	"github/xujialingit/shopping-app/pkg/pkg/logger"
 )
@@ -20,7 +21,11 @@ func main() {
 	}()
 
 	//服务
-
+	server, err := api.NewApiServer(logger)
+	if err != nil {
+		panic(err)
+	}
+	print(server)
 }
 
 func findLogConfigOption() []logger.Option {
